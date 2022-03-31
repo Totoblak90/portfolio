@@ -1,0 +1,59 @@
+@import "../../../sass/mixins";
+@import "../../../sass/animations";
+@import "../../../sass/variables";
+
+.section-about-me {
+  animation: fadeIn 1s ease;
+  &--joystick {
+    @include icons(60%, 1%);
+    width: $icon-image-width;
+  }
+  &--family {
+    @include icons(23%, 52%);
+    width: $icon-image-width;
+  }
+  &--headphones {
+    width: $icon-image-width;
+
+    @include icons(65%, 60%);
+  }
+  &--sport:hover,
+  &--joystick:hover,
+  &--family:hover,
+  &--headphones:hover {
+    transform: translateY(-2rem);
+  }
+
+  &__cta {
+    @include icons(50%, 94%);
+    transform: translateX(-50%);
+    border-bottom: 1px solid $color-primary;
+    border-top: 1px solid $color-primary;
+  }
+
+  &__sports-container {
+    img {
+      @include icons(29%, 1%);
+      width: $icon-image-width;
+    }
+    &--title {
+      opacity: 0;
+      position: absolute;
+      left: 8%;
+      top: 40%;
+      transition: all 0.5s;
+    }
+    &--description {
+      opacity: 0;
+      position: absolute;
+      left: 8%;
+      top: 44%;
+      width: 25rem;
+      transition: all 0.5s;
+    }
+    &:hover &--title,
+    &:hover &--description {
+      opacity: 1;
+    }
+  }
+}
