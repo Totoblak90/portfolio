@@ -4,58 +4,76 @@
 
 .section-about-me {
   animation: fadeIn 1s ease;
-  &--joystick {
-    @include icons(60%, 1%);
-    width: $icon-image-width;
-  }
-  &--family {
-    @include icons(23%, 52%);
-    width: $icon-image-width;
-  }
-  &--headphones {
-    width: $icon-image-width;
-
-    @include icons(65%, 60%);
-  }
-  &--joystick:hover,
-  &--family:hover,
-  &--headphones:hover {
-    transform: translateY(-2rem);
-  }
 
   &__cta {
     @include icons(50%, 94%);
     transform: translateX(-50%);
     border-bottom: 1px solid $color-primary;
     border-top: 1px solid $color-primary;
+    animation: twinkle 1s ease;
   }
 
   &__sports-container {
     &--icon {
       @include icons(29%, 1%);
-      width: $icon-image-width;
-      &:hover {
-        transform: translateY(-2rem);
-      }
+      @include about-me-icon;
     }
     &--title {
-      opacity: 0;
-      position: absolute;
-      left: 8%;
-      top: 40%;
-      transition: all 0.5s;
+      @include about-me-title-description(20%, 10%);
+      transform: translate(100%, -100%);
     }
     &--description {
-      opacity: 0;
-      position: absolute;
-      left: 8%;
-      top: 44%;
-      width: 25rem;
-      transition: all 0.5s;
+      @include about-me-title-description(20%, 14%);
+      transform: translate(100%, -100%);
+      width: $about-me-text-container;
     }
-    &:hover &--title,
-    &:hover &--description {
-      opacity: 1;
+  }
+
+  &__headphones-container {
+    &--icon {
+      @include icons(65%, 60%);
+      @include about-me-icon;
+    }
+    &--title {
+      transform: translateX(-100%);
+      @include about-me-title-description(73.5%, 62%);
+    }
+    &--description {
+      @include about-me-title-description(73.5%, 66%);
+      transform: translateX(-100%);
+      width: $about-me-text-container;
+    }
+  }
+
+  &__family-container {
+    &--icon {
+      @include icons(65%, 15%);
+      @include about-me-icon;
+    }
+    &--title {
+      transform: translateX(-100%);
+      @include about-me-title-description(74%, 19%);
+    }
+    &--description {
+      transform: translateX(-100%);
+      width: $about-me-text-container;
+      @include about-me-title-description(74%, 23%);
+    }
+  }
+
+  &__games-container {
+    &--icon {
+      @include icons(22%, 52%);
+      @include about-me-icon;
+    }
+    &--title {
+      transform: translateX(100%);
+      @include about-me-title-description(11%, 52%);
+    }
+    &--description {
+      transform: translateX(100%);
+      width: $about-me-text-container;
+      @include about-me-title-description(11%, 56%);
     }
   }
 }
