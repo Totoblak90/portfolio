@@ -17,7 +17,6 @@
 
     @include icons(65%, 60%);
   }
-  &--sport:hover,
   &--joystick:hover,
   &--family:hover,
   &--headphones:hover {
@@ -32,9 +31,12 @@
   }
 
   &__sports-container {
-    img {
+    &--icon {
       @include icons(29%, 1%);
       width: $icon-image-width;
+      &:hover {
+        transform: translateY(-2rem);
+      }
     }
     &--title {
       opacity: 0;
