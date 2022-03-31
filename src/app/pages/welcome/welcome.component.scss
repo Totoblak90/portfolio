@@ -1,0 +1,29 @@
+@import "../../../sass/mixins";
+
+.section-welcome {
+  &--vr {
+    @include icons(26%, 1%);
+  }
+  &--joystick {
+    @include icons(60%, 1%);
+  }
+  &--notebook {
+    @include icons(19%, 50%);
+  }
+  &--keypad {
+    @include icons(50%, 75%);
+    transform: translateX(-50%);
+  }
+  &--headphones {
+    @include icons(66.5%, 45%);
+  }
+  &--vr:hover,
+  &--joystick:hover,
+  &--notebook:hover,
+  &--headphones:hover {
+    transform: translateY(-2rem);
+  }
+  &--keypad:hover {
+    transform: translate(-50%, -2rem);
+  }
+}

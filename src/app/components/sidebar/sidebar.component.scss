@@ -1,0 +1,20 @@
+@import "../../../sass/variables";
+
+.section-sidebar {
+  &__list {
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    max-width: $fontSize-md;
+    &__item {
+      transform: rotate(-90deg);
+      &:not(:last-child) {
+        margin-bottom: 15rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+.gradient-circle-container {
+  @include gradientCircle(79.3rem, 79.3rem, inherit);
+  &--layer5 {
+    @include gradientCircle(79.3rem, 79.3rem, inherit);
+    border-radius: 1000px;
+    border: 1px solid rgba($color-secondary, 0.3);
+  }
+  &--layer4 {
+    @include gradientCircle(64.1rem, 64.1rem, darken(#efefef, 5%));
+    border-radius: 1000px;
+  }
+  &--layer3 {
+    @include gradientCircle(53.5rem, 53.5rem, darken(#efefef, 10%));
+    border-radius: 1000px;
+  }
+  &--layer2 {
+    @include gradientCircle(42.8rem, 42.8rem, darken(#efefef, 15%));
+    border-radius: 1000px;
+  }
+  &--layer1 {
+    @include gradientCircle(34.9rem, 34.9rem, $color-primary);
+    border-radius: 1000px;
+    img {
+      @include gradientCircle(40rem, 40rem, "");
+    }
+  }
+}

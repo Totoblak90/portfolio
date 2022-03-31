@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./sass/variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: $padding-xl;
+  font-size: $fontSize-md;
+  color: $color-primary;
+  background-color: $color-background;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: $fontWeight-regular;
+  height: 100%;
+}
+
+app-root {
+  height: 100%;
+}
+
+.heading-secondary {
+  font-size: $fontSize-l;
+}
+
+.btn {
+  text-decoration: none;
+  color: $color-secondary;
+  cursor: pointer;
+}

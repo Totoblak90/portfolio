@@ -1,0 +1,12 @@
+@import "../sass/variables";
+
+.section-app-container {
+  background-color: $color-background;
+  height: 100%;
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+  }
+}

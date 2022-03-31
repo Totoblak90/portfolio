@@ -1,0 +1,19 @@
+@import "../../../sass/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__nav {
+    &__list {
+      display: flex;
+      list-style: none;
+      gap: 5rem;
+      &__item {
+        &__link {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
