@@ -1,4 +1,5 @@
 @import "../../../sass/mixins";
+@import "../../../sass/animations";
 
 .section-welcome {
   &--vr {
@@ -15,7 +16,7 @@
     transform: translateX(-50%);
   }
   &--headphones {
-    @include icons(66.5%, 45%);
+    @include icons(64%, 60%);
   }
   &--vr:hover,
   &--joystick:hover,
@@ -25,5 +26,17 @@
   }
   &--keypad:hover {
     transform: translate(-50%, -2rem);
+  }
+  .animated {
+    position: absolute;
+    top: 40%;
+    left: 73%;
+    animation: fadeInDown 1s linear;
+    &--sub1 {
+      animation: fadeInDown 1.3s linear;
+    }
+    &--sub2 {
+      animation: fadeInDown 2s linear;
+    }
   }
 }

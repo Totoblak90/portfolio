@@ -29,6 +29,20 @@ app-root {
   height: 100%;
 }
 
+.heading-primary {
+  font-size: $fontSize-xl;
+  &--sub1 {
+    display: block;
+    letter-spacing: 10px;
+  }
+  &--sub2 {
+    display: block;
+    color: $color-tertiary;
+    font-size: $fontSize-l;
+    letter-spacing: 4.5px;
+  }
+}
+
 .heading-secondary {
   font-size: $fontSize-l;
 }
