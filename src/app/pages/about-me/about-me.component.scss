@@ -16,6 +16,7 @@
       @include icons(29%, 1%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
+      transition: $smooth-transition-up;
     }
     &--title {
       @include about-me-title-description(20%, 10%);
@@ -33,6 +34,7 @@
       @include icons(65%, 60%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
+      transition: $smooth-transition-up;
     }
     &--title {
       transform: translateX(-100%);
@@ -50,6 +52,7 @@
       @include icons(65%, 15%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
+      transition: $smooth-transition-up;
     }
     &--title {
       transform: translateX(-100%);
@@ -67,6 +70,7 @@
       @include icons(22%, 52%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
+      transition: $smooth-transition-up;
     }
     &--title {
       transform: translateX(100%);

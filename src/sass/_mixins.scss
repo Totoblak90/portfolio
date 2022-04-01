@@ -20,7 +20,7 @@
 @mixin about-me-icon {
   width: $icon-image-width;
   &:hover {
-    transform: translateY(-2rem);
+    transform: translateY($translateY-up-sm);
     & + h3 {
       opacity: 1;
       transform: translate(0);

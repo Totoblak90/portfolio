@@ -7,11 +7,6 @@ import { MyWorkComponent } from './pages/my-work/my-work.component';
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    component: WelcomeComponent,
-  },
-  {
     path: 'about-me',
     component: AboutMeComponent,
   },
@@ -22,6 +17,15 @@ const routes: Routes = [
   {
     path: 'my-work',
     component: MyWorkComponent,
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: WelcomeComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '',
   },
 ];
 

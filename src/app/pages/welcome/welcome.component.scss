@@ -1,36 +1,42 @@
 @import "../../../sass/mixins";
 @import "../../../sass/animations";
+@import "../../../sass/variables";
 
 .section-welcome {
   &--vr {
     animation: fadeIn 1s ease;
     @include icons(26%, 1%);
+    transition: $smooth-transition-up;
   }
   &--joystick {
     animation: fadeIn 1s ease;
     @include icons(60%, 1%);
+    transition: $smooth-transition-up;
   }
   &--notebook {
     animation: fadeIn 1s ease;
     @include icons(19%, 50%);
+    transition: $smooth-transition-up;
   }
   &--keypad {
     animation: fadeIn 1s ease;
     @include icons(50%, 75%);
     transform: translateX(-50%);
+    transition: $smooth-transition-up;
   }
   &--headphones {
     animation: fadeIn 1s ease;
     @include icons(64%, 60%);
+    transition: $smooth-transition-up;
   }
   &--vr:hover,
   &--joystick:hover,
   &--notebook:hover,
   &--headphones:hover {
-    transform: translateY(-2rem);
+    transform: translateY($translateY-up-sm);
   }
   &--keypad:hover {
-    transform: translate(-50%, -2rem);
+    transform: translate(-50%, $translateY-up-sm);
   }
   .animated {
     position: absolute;
