@@ -1,0 +1,67 @@
+@import "../../../sass/variables";
+@import "../../../sass/animations";
+@import "../../../sass/utilities";
+
+.section-stack {
+  display: flex;
+  padding: $padding-xl;
+  gap: 79.3rem;
+  &__icon {
+    &--code {
+      width: $icon-image-width;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    &--cursor {
+      width: $fontSize-xl;
+      animation: click 1s 2 ease forwards;
+      opacity: 0;
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__frontend {
+    flex-basis: calc((100% - #{$gradient-circle-max-width}) / 2);
+    animation: fadeInFromCenterToLeft 1s ease;
+  }
+
+  &__backend {
+    flex-basis: calc((100% - #{$gradient-circle-max-width}) / 2);
+    animation: fadeInFromCenterToRight 1s ease;
+  }
+
+  &__frontend.disappear,
+  &__backend.disappear {
+    animation: fadeOut 0.5s ease;
+  }
+
+  &__card {
+    &__header {
+      margin-bottom: $margin-md;
+
+      &__title {
+        margin-bottom: $margin-sm;
+      }
+      &__icons {
+        display: flex;
+        justify-content: space-between;
+        &--icon {
+          max-width: 5rem;
+        }
+      }
+    }
+    &__body {
+      &__description {
+        line-height: 1.5;
+      }
+    }
+  }
+}

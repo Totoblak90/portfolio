@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent implements OnInit {
-  public mainImage: string = 'assets/yo.svg';
-  public altMessageMainImage: string = 'Foto de perfil';
-
   constructor() {}
 
   ngOnInit(): void {}

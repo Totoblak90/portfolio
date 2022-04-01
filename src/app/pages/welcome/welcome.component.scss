@@ -2,21 +2,25 @@
 @import "../../../sass/animations";
 
 .section-welcome {
-  animation: fadeIn 1s ease;
   &--vr {
+    animation: fadeIn 1s ease;
     @include icons(26%, 1%);
   }
   &--joystick {
+    animation: fadeIn 1s ease;
     @include icons(60%, 1%);
   }
   &--notebook {
+    animation: fadeIn 1s ease;
     @include icons(19%, 50%);
   }
   &--keypad {
+    animation: fadeIn 1s ease;
     @include icons(50%, 75%);
     transform: translateX(-50%);
   }
   &--headphones {
+    animation: fadeIn 1s ease;
     @include icons(64%, 60%);
   }
   &--vr:hover,

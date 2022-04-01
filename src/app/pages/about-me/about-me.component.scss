@@ -3,8 +3,6 @@
 @import "../../../sass/variables";
 
 .section-about-me {
-  animation: fadeIn 1s ease;
-
   &__cta {
     @include icons(50%, 94%);
     transform: translateX(-50%);
@@ -17,6 +15,7 @@
     &--icon {
       @include icons(29%, 1%);
       @include about-me-icon;
+      animation: fadeIn 1s ease;
     }
     &--title {
       @include about-me-title-description(20%, 10%);
@@ -33,6 +32,7 @@
     &--icon {
       @include icons(65%, 60%);
       @include about-me-icon;
+      animation: fadeIn 1s ease;
     }
     &--title {
       transform: translateX(-100%);
@@ -49,6 +49,7 @@
     &--icon {
       @include icons(65%, 15%);
       @include about-me-icon;
+      animation: fadeIn 1s ease;
     }
     &--title {
       transform: translateX(-100%);
@@ -65,6 +66,7 @@
     &--icon {
       @include icons(22%, 52%);
       @include about-me-icon;
+      animation: fadeIn 1s ease;
     }
     &--title {
       transform: translateX(100%);

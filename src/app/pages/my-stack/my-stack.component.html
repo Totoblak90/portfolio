@@ -1,0 +1,49 @@
+<section class="section-stack">
+  <img class="section-stack__icon--code" src="assets/code.png" alt="Developer symbol" (click)="showInfo()">
+  <img *ngIf="showCursor" class="section-stack__icon--cursor" src="assets/cursor.png" alt="Cursor icon"
+    #cursorAnimation>
+  <article *ngIf="showStack" class="section-stack__frontend" #frontendContainer>
+    <div class="section-stack__card">
+      <div class="section-stack__card__header">
+        <h3 class="section-stack__card__header__title">
+          Frontend
+        </h3>
+        <div class="section-stack__card__header__icons">
+          <img class="section-stack__card__header__icons--icon" src="assets/angular.png" alt="Angular logo">
+          <img class="section-stack__card__header__icons--icon" src="assets/ionic.png" alt="Ionic logo">
+          <img class="section-stack__card__header__icons--icon" src="assets/html.png" alt="HTML 5 logo">
+          <img class="section-stack__card__header__icons--icon" src="assets/css.png" alt="CSS 3 logo">
+          <img class="section-stack__card__header__icons--icon" src="assets/sass.png" alt="Sass logo">
+          <img class="section-stack__card__header__icons--icon" src="assets/js.png" alt="Javascript logo">
+        </div>
+      </div>
+      <div class="section-stack__card__body">
+        <p class="section-stack__card__header__description">
+          As a frontend developer i can create mobile and/or web applications. I love a good user experience a
+          functionality.
+          I can handle Angular, Ionic, CSS, Sass, HTML and Javascript pretty well.
+        </p>
+      </div>
+    </div>
+  </article>
+  <article *ngIf="showStack" class="section-stack__backend" #backendContainer>
+    <div class="section-stack__backend__card">
+      <div class="section-stack__card__header">
+        <h3 class="section-stack__card__header__title">
+          Backend
+        </h3>
+        <div class="section-stack__card__header__icons u-justify-content-flex-start u-flex-gap-sm">
+          <img class="section-stack__card__header__icons--icon u-max-width-7-rem" src="assets/node.png"
+            alt="NodeJS logo">
+          <img class="section-stack__card__header__icons--icon u-max-width-7-rem" src="assets/mysql.png"
+            alt="MySql logo">
+        </div>
+      </div>
+      <div class="section-stack__card__body">
+        <p class="section-stack__card__header__description">
+          As Backend developer i can create sturdy a complex systems with the power of NodeJS and MySql.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
