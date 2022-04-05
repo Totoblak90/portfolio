@@ -15,6 +15,21 @@
       &:not(:last-child) {
         margin-bottom: 15rem;
       }
+      @media (max-width: 760px) {
+        font-size: 2.4rem;
+      }
+      @media (max-width: 630px) {
+        transform: rotate(0);
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width: 630px) {
+      flex-direction: row;
+      top: 15%;
+      left: 50%;
+      gap: $padding-l;
+      transform: translate(-50%, 0);
+      max-width: initial;
     }
   }
 }
