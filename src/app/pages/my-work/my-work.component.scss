@@ -36,6 +36,17 @@
     }
   }
 
+  &__tailwind-container {
+    &__link {
+      &--icon {
+        @include icons(26%, 70%);
+        @include about-me-icon;
+        animation: fadeIn 1s ease;
+        transition: $smooth-transition-up;
+      }
+    }
+  }
+
   &__old-portfolio:link,
   &__old-portfolio:visited {
     @include icons(21%, 42%);

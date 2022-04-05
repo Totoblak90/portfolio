@@ -15,10 +15,10 @@
   position: absolute;
   top: $top;
   left: $left;
+  width: $icon-image-width;
 }
 
 @mixin about-me-icon {
-  width: $icon-image-width;
   &:hover {
     transform: translateY($translateY-up-sm);
     & + h3 {

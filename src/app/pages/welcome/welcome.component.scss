@@ -5,28 +5,28 @@
 .section-welcome {
   &--vr {
     animation: fadeIn 1s ease;
-    @include icons(26%, 1%);
+    @include icons(33%, 3%);
     transition: $smooth-transition-up;
   }
   &--joystick {
     animation: fadeIn 1s ease;
-    @include icons(60%, 1%);
+    @include icons(56%, 3%);
     transition: $smooth-transition-up;
   }
   &--notebook {
     animation: fadeIn 1s ease;
-    @include icons(19%, 50%);
+    @include icons(25%, 50%);
     transition: $smooth-transition-up;
   }
   &--keypad {
     animation: fadeIn 1s ease;
-    @include icons(50%, 75%);
+    @include icons(50%, 82%);
     transform: translateX(-50%);
     transition: $smooth-transition-up;
   }
   &--headphones {
     animation: fadeIn 1s ease;
-    @include icons(64%, 60%);
+    @include icons(61%, 65%);
     transition: $smooth-transition-up;
   }
   &--vr:hover,
