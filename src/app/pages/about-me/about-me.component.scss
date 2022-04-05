@@ -18,15 +18,27 @@
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
+      @media (max-width: 750px) {
+        transition: all 0.5s;
+        &:hover {
+          opacity: 0;
+        }
+      }
     }
     &--title {
       @include about-me-title-description(-5%, 10%);
       transform: translate(100%, -100%);
+      @media (max-width: 750px) {
+        @include about-me-title-description(11%, 1%);
+      }
     }
     &--description {
       @include about-me-title-description(-5%, 14%);
       transform: translate(100%, -100%);
       width: $about-me-text-container;
+      @media (max-width: 750px) {
+        @include about-me-title-description(11%, 5%);
+      }
     }
   }
 
@@ -36,15 +48,29 @@
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
+      @media (max-width: 750px) {
+        transition: all 0.5s;
+        &:hover {
+          opacity: 0;
+        }
+      }
     }
     &--title {
       transform: translateX(-100%);
       @include about-me-title-description(91%, 48%);
+      @media (max-width: 750px) {
+        @include about-me-title-description(78%, 60%);
+        z-index: 99999 * 99999;
+      }
     }
     &--description {
       @include about-me-title-description(91%, 52%);
       transform: translateX(-100%);
       width: $about-me-text-container;
+      @media (max-width: 750px) {
+        @include about-me-title-description(78%, 64%);
+        z-index: 99999 * 99999;
+      }
     }
   }
 
@@ -54,16 +80,30 @@
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
+      @media (max-width: 750px) {
+        transition: all 0.5s;
+        &:hover {
+          opacity: 0;
+        }
+      }
     }
     &--title {
       transform: translateX(-100%);
       @include about-me-title-description(90%, 35%);
       width: 100%;
+      @media (max-width: 750px) {
+        @include about-me-title-description(75%, 15%);
+        z-index: 99999 * 99999;
+      }
     }
     &--description {
       transform: translateX(-100%);
       width: $about-me-text-container;
       @include about-me-title-description(91%, 39%);
+      @media (max-width: 750px) {
+        @include about-me-title-description(75%, 19%);
+        z-index: 99999 * 99999;
+      }
     }
   }
 
@@ -73,15 +113,29 @@
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
+      @media (max-width: 750px) {
+        transition: all 0.5s;
+        &:hover {
+          opacity: 0;
+        }
+      }
     }
     &--title {
       transform: translateX(100%);
       @include about-me-title-description(-8%, 68%);
+      @media (max-width: 750px) {
+        @include about-me-title-description(0%, 52%);
+        z-index: 99999 * 99999;
+      }
     }
     &--description {
       transform: translateX(100%);
       width: $about-me-text-container;
       @include about-me-title-description(-8%, 72%);
+      @media (max-width: 750px) {
+        @include about-me-title-description(0%, 56%);
+        z-index: 99999 * 99999;
+      }
     }
   }
 }
