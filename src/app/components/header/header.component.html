@@ -29,4 +29,44 @@
       </li>
     </ul>
   </nav>
+
+  <!--
+  -----------------------------------------------------------------------------------------------------------------------------
+  HEADER FOR MOBILE
+  -----------------------------------------------------------------------------------------------------------------------------
+-->
+
+  <div class="header__nav-mobile">
+    <button class="header__nav-mobile__menu" (click)="menuIsOpen = !menuIsOpen">
+      <img class="header__nav-mobile__menu--icon" src="assets/menu.png" alt="Menu icon">
+    </button>
+    <div class="header__nav-mobile__overlay" *ngIf="menuIsOpen">
+      <button class="header__nav-mobile__overlay__menu" (click)="menuIsOpen = !menuIsOpen">
+        <img class="header__nav-mobile__menu--icon" src="assets/menu.png" alt="Menu icon">
+      </button>
+
+      <ul class="header__nav-mobile__overlay__list">
+        <li class="header__nav-mobile__overlay__list__list-item">
+          <a class="header__nav-mobile__overlay__list__list-item__link" routerLink="/"
+            (click)="menuIsOpen = !menuIsOpen">Welcome</a>
+        </li>
+        <li class="header__nav-mobile__overlay__list__list-item">
+          <a class="header__nav-mobile__overlay__list__list-item__link" routerLink="/about-me"
+            (click)="menuIsOpen = !menuIsOpen">About me</a>
+        </li>
+        <li class="header__nav-mobile__overlay__list__list-item">
+          <a class="header__nav-mobile__overlay__list__list-item__link" routerLink="/my-stack"
+            (click)="menuIsOpen = !menuIsOpen">My stack</a>
+        </li>
+        <li class="header__nav-mobile__overlay__list__list-item">
+          <a class="header__nav-mobile__overlay__list__list-item__link" routerLink="/my-work"
+            (click)="menuIsOpen = !menuIsOpen">My work</a>
+        </li>
+        <li class="header__nav-mobile__overlay__list__list-item">
+          <a class="header__nav-mobile__overlay__list__list-item__link"
+            href="mailto: tobias.blaksley@hotmail.com">Contact me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>

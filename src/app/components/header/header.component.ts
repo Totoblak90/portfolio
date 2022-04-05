@@ -9,10 +9,12 @@ import { map, take, takeUntil, tap } from 'rxjs/operators';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnDestroy, OnInit {
+  public menuIsOpen: boolean = false;
   public activeWelcome: boolean = false;
   private destroy$: Subject<boolean> = new Subject();
 
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
+
   ngOnInit(): void {
     this.router.events
       .pipe(
