@@ -71,5 +71,9 @@
     border-bottom: 1px solid $color-primary;
     border-top: 1px solid $color-primary;
     animation: fadeIn 1s ease;
+    @media (max-width: 395px) {
+      font-size: 3rem;
+      text-align: center;
+    }
   }
 }

@@ -39,6 +39,7 @@
   top: $top;
   transition: all 0.5s;
 }
+
 @mixin about-me-description($left, $top) {
   opacity: 0;
   position: absolute;

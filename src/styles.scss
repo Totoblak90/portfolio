@@ -20,6 +20,12 @@ html {
   @media (max-width: 760px) {
     font-size: 37.5%;
   }
+  @media (max-width: 550px) {
+    font-size: 31.25%;
+  }
+  @media (max-width: 395px) {
+    font-size: 24%;
+  }
 }
 
 body {
@@ -67,6 +73,9 @@ app-root {
 
 .heading-secondary {
   font-size: $fontSize-l;
+  @media (max-width: 395px) {
+    font-size: $fontSize-xl;
+  }
 }
 
 .btn {

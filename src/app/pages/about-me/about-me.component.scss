@@ -10,6 +10,9 @@
     border-top: 1px solid $color-primary;
     animation: twinkle 1s ease;
     width: fit-content;
+    @media (max-width: 395px) {
+      font-size: 5rem;
+    }
   }
 
   &__sports-container {
@@ -30,6 +33,14 @@
       transform: translate(100%, -100%);
       @media (max-width: 750px) {
         @include about-me-title-description(11%, 1%);
+        z-index: 99999 * 99999;
+      }
+      @media (max-width: 450px) {
+        @include about-me-title-description(30%, 47%);
+      }
+      @media (max-width: 395px) {
+        @include about-me-title-description(40%, 41%);
+        font-size: 3rem;
       }
     }
     &--description {
@@ -38,6 +49,14 @@
       width: $about-me-text-container;
       @media (max-width: 750px) {
         @include about-me-title-description(11%, 5%);
+        z-index: 99999 * 99999;
+      }
+      @media (max-width: 450px) {
+        @include about-me-title-description(41%, 45%);
+      }
+      @media (max-width: 395px) {
+        @include about-me-title-description(35%, 46%);
+        font-size: 3rem;
       }
     }
   }
@@ -62,6 +81,13 @@
         @include about-me-title-description(78%, 60%);
         z-index: 99999 * 99999;
       }
+      @media (max-width: 450px) {
+        @include about-me-title-description(30%, 47%);
+      }
+      @media (max-width: 395px) {
+        @include about-me-title-description(40%, 41%);
+        font-size: 3rem;
+      }
     }
     &--description {
       @include about-me-title-description(91%, 52%);
@@ -70,6 +96,13 @@
       @media (max-width: 750px) {
         @include about-me-title-description(78%, 64%);
         z-index: 99999 * 99999;
+      }
+      @media (max-width: 450px) {
+        @include about-me-title-description(40%, 45%);
+      }
+      @media (max-width: 395px) {
+        @include about-me-title-description(35%, 46%);
+        font-size: 3rem;
       }
     }
   }
@@ -95,6 +128,13 @@
         @include about-me-title-description(75%, 15%);
         z-index: 99999 * 99999;
       }
+      @media (max-width: 450px) {
+        @include about-me-title-description(38%, 42%);
+      }
+      @media (max-width: 395px) {
+        @include about-me-title-description(36%, 40%);
+        font-size: 3rem;
+      }
     }
     &--description {
       transform: translateX(-100%);
@@ -103,6 +143,15 @@
       @media (max-width: 750px) {
         @include about-me-title-description(75%, 19%);
         z-index: 99999 * 99999;
+      }
+      @media (max-width: 450px) {
+        @include about-me-title-description(35%, 46%);
+      }
+      @media (max-width: 395px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 395px) {
+        font-size: 3rem;
       }
     }
   }
@@ -127,6 +176,13 @@
         @include about-me-title-description(0%, 52%);
         z-index: 99999 * 99999;
       }
+      @media (max-width: 450px) {
+        @include about-me-title-description(30%, 47%);
+      }
+      @media (max-width: 395px) {
+        @include about-me-title-description(40%, 41%);
+        font-size: 3rem;
+      }
     }
     &--description {
       transform: translateX(100%);
@@ -136,6 +192,40 @@
         @include about-me-title-description(0%, 56%);
         z-index: 99999 * 99999;
       }
+      @media (max-width: 450px) {
+        @include about-me-title-description(42%, 45%);
+      }
+      @media (max-width: 395px) {
+        @include about-me-title-description(35%, 46%);
+        font-size: 3rem;
+      }
     }
+  }
+
+  &__small-screen-hover {
+    @include gradientCircle(36rem, 36rem, $color-primary);
+    background-color: $color-background;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100000px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-about-me__sports-container:hover + div + div + div + h3 + div {
+    opacity: 1;
+  }
+  .section-about-me__headphones-container:hover + div + div + h3 + div {
+    opacity: 1;
+  }
+  .section-about-me__family-container:hover + div + h3 + div {
+    opacity: 1;
+  }
+  .section-about-me__games-container:hover + h3 + div {
+    opacity: 1;
   }
 }
