@@ -7,6 +7,7 @@
     $gradient-circle-max-width,
     inherit
   );
+  overflow: visible;
   &--layer5 {
     @include gradientCircle(
       $gradient-circle-max-width,
@@ -23,6 +24,7 @@
   &--layer3 {
     @include gradientCircle(53.5rem, 53.5rem, darken(#efefef, 10%));
     border-radius: 1000px;
+    overflow: visible;
   }
   &--layer2 {
     @include gradientCircle(42.8rem, 42.8rem, darken(#efefef, 15%));

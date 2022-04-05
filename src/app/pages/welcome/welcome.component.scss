@@ -5,17 +5,17 @@
 .section-welcome {
   &--vr {
     animation: fadeIn 1s ease;
-    @include icons(33%, 3%);
+    @include icons(10%, 3%);
     transition: $smooth-transition-up;
   }
   &--joystick {
     animation: fadeIn 1s ease;
-    @include icons(56%, 3%);
+    @include icons(60%, 3%);
     transition: $smooth-transition-up;
   }
   &--notebook {
     animation: fadeIn 1s ease;
-    @include icons(25%, 50%);
+    @include icons(-5%, 50%);
     transition: $smooth-transition-up;
   }
   &--keypad {
@@ -26,7 +26,7 @@
   }
   &--headphones {
     animation: fadeIn 1s ease;
-    @include icons(61%, 65%);
+    @include icons(78%, 65%);
     transition: $smooth-transition-up;
   }
   &--vr:hover,
@@ -41,7 +41,13 @@
   .animated {
     position: absolute;
     top: 40%;
-    left: 69%;
-    animation: fadeInDown 1s linear;
+    left: 92%;
+    animation: fadeInLeft 1s linear;
+    @media (max-width: 1250px) {
+      animation: fadeInDownBig 1s linear;
+      top: 105%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

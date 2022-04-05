@@ -17,7 +17,7 @@
   &__dln-container {
     &__link {
       &--icon {
-        @include icons(65%, 18%);
+        @include icons(75%, 30%);
         @include about-me-icon;
         animation: fadeIn 1s ease;
         transition: $smooth-transition-up;
@@ -28,7 +28,7 @@
   &__omnifood-container {
     &__link {
       &--icon {
-        @include icons(63%, 80%);
+        @include icons(65%, 80%);
         @include about-me-icon;
         animation: fadeIn 1s ease;
         transition: $smooth-transition-up;
@@ -39,7 +39,7 @@
   &__tailwind-container {
     &__link {
       &--icon {
-        @include icons(26%, 70%);
+        @include icons(12%, 69%);
         @include about-me-icon;
         animation: fadeIn 1s ease;
         transition: $smooth-transition-up;
@@ -49,13 +49,18 @@
 
   &__old-portfolio:link,
   &__old-portfolio:visited {
-    @include icons(21%, 42%);
+    @include icons(-10%, 50%);
     border-bottom: 1px solid $color-primary;
     border-top: 1px solid $color-primary;
     animation: fadeIn 1s ease;
     text-decoration: none;
     color: $color-primary;
     transition: $smooth-transition-up;
+    width: fit-content;
+    @media (max-width: 905px) {
+      @include icons(-2%, 50%);
+      width: fit-content;
+    }
   }
   &__old-portfolio:hover {
     transform: translateY($translateY-up-sm);

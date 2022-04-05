@@ -3,9 +3,6 @@
 @import "../../../sass/utilities";
 
 .section-stack {
-  display: flex;
-  padding: $padding-xl;
-  gap: 79.3rem;
   &__icon {
     &--code {
       width: $icon-image-width;
@@ -15,6 +12,7 @@
       transform: translateX(-50%);
       transition: all 0.2s;
       cursor: pointer;
+      z-index: 99999999999999999;
     }
 
     &--cursor {
@@ -25,17 +23,28 @@
       left: 50%;
       top: 30%;
       transform: translate(-50%, -50%);
+      z-index: 99999999999999999;
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    gap: 5rem;
+    transform: translateX(-50%);
+    display: flex;
+    width: 80vw;
+    @media (max-width: 1400px) {
+      top: 95%;
     }
   }
 
   &__frontend {
-    flex-basis: calc((100% - #{$gradient-circle-max-width}) / 2);
-    animation: fadeInFromCenterToLeft 1s ease;
+    animation: fadeIn 1s ease;
   }
 
   &__backend {
-    flex-basis: calc((100% - #{$gradient-circle-max-width}) / 2);
-    animation: fadeInFromCenterToRight 1s ease;
+    animation: fadeIn 1s ease;
   }
 
   &__frontend.disappear,

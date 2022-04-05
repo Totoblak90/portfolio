@@ -9,21 +9,22 @@
     border-bottom: 1px solid $color-primary;
     border-top: 1px solid $color-primary;
     animation: twinkle 1s ease;
+    width: fit-content;
   }
 
   &__sports-container {
     &--icon {
-      @include icons(29%, 1%);
+      @include icons(11%, 1%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
     }
     &--title {
-      @include about-me-title-description(20%, 10%);
+      @include about-me-title-description(-5%, 10%);
       transform: translate(100%, -100%);
     }
     &--description {
-      @include about-me-title-description(20%, 14%);
+      @include about-me-title-description(-5%, 14%);
       transform: translate(100%, -100%);
       width: $about-me-text-container;
     }
@@ -31,17 +32,17 @@
 
   &__headphones-container {
     &--icon {
-      @include icons(65%, 60%);
+      @include icons(78%, 60%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
     }
     &--title {
       transform: translateX(-100%);
-      @include about-me-title-description(73.5%, 62%);
+      @include about-me-title-description(91%, 48%);
     }
     &--description {
-      @include about-me-title-description(73.5%, 66%);
+      @include about-me-title-description(91%, 52%);
       transform: translateX(-100%);
       width: $about-me-text-container;
     }
@@ -49,37 +50,38 @@
 
   &__family-container {
     &--icon {
-      @include icons(65%, 15%);
+      @include icons(75%, 15%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
     }
     &--title {
       transform: translateX(-100%);
-      @include about-me-title-description(74%, 19%);
+      @include about-me-title-description(90%, 35%);
+      width: 100%;
     }
     &--description {
       transform: translateX(-100%);
       width: $about-me-text-container;
-      @include about-me-title-description(74%, 23%);
+      @include about-me-title-description(91%, 39%);
     }
   }
 
   &__games-container {
     &--icon {
-      @include icons(22%, 52%);
+      @include icons(0%, 52%);
       @include about-me-icon;
       animation: fadeIn 1s ease;
       transition: $smooth-transition-up;
     }
     &--title {
       transform: translateX(100%);
-      @include about-me-title-description(11%, 52%);
+      @include about-me-title-description(-8%, 68%);
     }
     &--description {
       transform: translateX(100%);
       width: $about-me-text-container;
-      @include about-me-title-description(11%, 56%);
+      @include about-me-title-description(-8%, 72%);
     }
   }
 }

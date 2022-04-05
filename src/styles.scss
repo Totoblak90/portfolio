@@ -9,8 +9,14 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 56.25%;
   height: 100%;
+  @media (max-width: 1400px) {
+    font-size: 50%;
+  }
+  @media (max-width: 905px) {
+    font-size: 43.75%;
+  }
 }
 
 body {
@@ -31,15 +37,28 @@ app-root {
 
 .heading-primary {
   font-size: $fontSize-xl;
+  @media (max-width: 1250px) {
+    width: 200%;
+    text-align: center;
+    font-size: 3rem;
+  }
   &--sub1 {
     display: block;
     letter-spacing: 10px;
+    @media (max-width: 1250px) {
+      display: inline;
+      letter-spacing: 0;
+    }
   }
   &--sub2 {
     display: block;
     color: $color-tertiary;
     font-size: $fontSize-l;
     letter-spacing: 4.5px;
+    @media (max-width: 1250px) {
+      display: inline;
+      letter-spacing: 1px;
+    }
   }
 }
 
