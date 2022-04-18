@@ -8,9 +8,6 @@
     inherit
   );
   overflow: visible;
-  @media (max-width: 395px) {
-    top: 40%;
-  }
   &--layer5 {
     @include gradientCircle(
       $gradient-circle-max-width,
@@ -38,16 +35,6 @@
     border-radius: 1000px;
     img {
       @include gradientCircle(40rem, 40rem, "");
-    }
-    &--overlay {
-      display: none;
-      @media (max-width: 460px) {
-        display: block;
-        z-index: 99999999 * 999999999;
-        background-color: $color-background;
-        width: 100vw;
-        height: 100vh;
-      }
     }
   }
 }
