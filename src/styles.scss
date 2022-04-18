@@ -40,6 +40,9 @@ body {
   font-weight: $fontWeight-regular;
   height: 100vh;
   overflow-x: hidden;
+  @media (max-width: 850px) {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .heading-primary {

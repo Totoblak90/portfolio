@@ -2,12 +2,10 @@
 
 .section-app-container {
   background-color: $color-background;
-  height: 100%;
   &__layout {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-top: 50rem;
-    width: 100%;
   }
 }
